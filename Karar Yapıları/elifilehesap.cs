@@ -4,19 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace orhanss
+namespace xperia
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int top = 0;
-            for (int i = 0; i < 3 ; i++)
+            double sonuc = 0;
+            int num1 = 0;
+            int num2 = 0;
+
+
+            Console.Write("Birinci Sayýyý Giriniz : ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Ýkinci Sayýyý Giriniz : ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Seçim Yapýnýz\n1.Toplama\n2.Çýkartma\n3.Çarpma\n4.Bölme\nSeçiminiz ?");
+            int secim = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+            if (secim == 1)
             {
-                Console.WriteLine("Orhan");
+                Console.Write("Toplama Sonucunuz = {0}", sonuc = num1 + num2);
             }
- 
-            Console.ReadLine();
+            else if (secim == 2)
+            {
+                Console.Write("Çýkartma Sonucunuz = {0}", sonuc = num1 - num2);
+            }
+            else if (secim == 3)
+            {
+                Console.Write("Çarpma Sonucunuz = {0}", sonuc = num1 * num2);
+            }
+            else if (secim == 4)
+            {
+                Console.Write("Toplama Sonucunuz = {0}", sonuc = num1 / num2);
+            }
+
+
+
         }
     }
 }
