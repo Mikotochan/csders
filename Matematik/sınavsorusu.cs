@@ -4,21 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApp3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i, sayi, fakt = 1;
-            Console.Write("Sayý giriniz: ");
+            int sayi, fakt = 1; // ((n-2)!/n) + (n*2)
+            Console.Write("Sayý Giriniz : ");
             sayi = Convert.ToInt32(Console.ReadLine());
-            for (i = 1; i <= sayi; i++)
+            int blopp = sayi - 2;
+            for (int i = 1; i <= blopp; i++)
             {
                 fakt = fakt * i;
             }
-            Console.Write("Sonuç:" + fakt);
+            double treaker = (fakt / sayi) + (sayi * 2);
+            Console.Write(treaker);
 
+
+            Console.ReadLine();
         }
     }
 }
